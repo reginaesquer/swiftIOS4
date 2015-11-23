@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-q2-j25">
+                                <rect key="frame" x="66" y="39" width="173" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-2R-Lru">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ix9-Or-Fvb">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b1b-5K-4wH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-Hv-qFW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQY-Jh-SYX">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <state key="normal" title="Quiero una hamburguesa"/>
+                                                                        <connections>
+                                                                            <action selector="quieroHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1D-Er-9WH"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="leading" secondItem="p2d-2R-Lru" secondAttribute="leading" id="0Bs-Ct-vBB"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="top" secondItem="p2d-2R-Lru" secondAttribute="topMargin" id="2uD-3D-JWz"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="leading" secondItem="p2d-2R-Lru" secondAttribute="leading" id="6ZH-dY-9L7"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="trailing" secondItem="p2d-2R-Lru" secondAttribute="trailingMargin" id="9MU-Pc-4qk"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="top" secondItem="p2d-2R-Lru" secondAttribute="top" id="9Tc-0r-cbT"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="top" secondItem="p2d-2R-Lru" secondAttribute="top" id="Cik-m5-4xe"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="centerX" secondItem="p2d-2R-Lru" secondAttribute="centerX" id="Eo4-Qt-6Dd"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="top" secondItem="p2d-2R-Lru" secondAttribute="top" id="Jyu-Xt-Gbj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ix9-Or-Fvb" secondAttribute="trailing" id="Mxw-xR-tfQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ix9-Or-Fvb" secondAttribute="trailing" id="NXh-B6-iv8"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ix9-Or-Fvb" secondAttribute="bottom" id="QZN-Fl-QZb"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ix9-Or-Fvb" secondAttribute="bottom" id="SjV-6B-S1W"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ix9-Or-Fvb" secondAttribute="bottom" id="Upt-3t-Y1h"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="centerY" secondItem="p2d-2R-Lru" secondAttribute="centerY" id="a9h-eY-jpU"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="leading" secondItem="p2d-2R-Lru" secondAttribute="leading" id="g1G-5N-PE3"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="leading" secondItem="p2d-2R-Lru" secondAttribute="leadingMargin" id="gQG-Yq-aFW"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="leading" secondItem="p2d-2R-Lru" secondAttribute="leading" id="gfM-4y-Bdh"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="top" secondItem="p2d-2R-Lru" secondAttribute="top" id="md6-rg-KOZ"/>
+                                            <constraint firstItem="Ix9-Or-Fvb" firstAttribute="bottom" secondItem="p2d-2R-Lru" secondAttribute="bottomMargin" id="oBp-R3-9XN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ix9-Or-Fvb" secondAttribute="trailing" id="vb7-AM-VWe"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p2d-2R-Lru" secondAttribute="trailing" id="2JO-ey-aMA"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="top" secondItem="UwD-q2-j25" secondAttribute="topMargin" id="5fh-EC-d1P"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="leading" secondItem="UwD-q2-j25" secondAttribute="leadingMargin" id="9Pn-zf-6no"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="centerY" secondItem="UwD-q2-j25" secondAttribute="centerY" id="ICM-Nl-sLm"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="leading" secondItem="UwD-q2-j25" secondAttribute="leading" id="NwU-mS-ba4"/>
+                                    <constraint firstAttribute="bottom" secondItem="p2d-2R-Lru" secondAttribute="bottom" id="OL8-Mm-z1Q"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="top" secondItem="UwD-q2-j25" secondAttribute="top" id="OfS-aj-dCu"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="centerX" secondItem="UwD-q2-j25" secondAttribute="centerX" id="RtU-Ls-WjW"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="bottom" secondItem="UwD-q2-j25" secondAttribute="bottomMargin" id="SYo-HO-iWV"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="top" secondItem="UwD-q2-j25" secondAttribute="top" id="Utn-cd-b72"/>
+                                    <constraint firstAttribute="bottom" secondItem="p2d-2R-Lru" secondAttribute="bottom" id="aeu-si-5xv"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="leading" secondItem="UwD-q2-j25" secondAttribute="leading" id="amO-0P-KUa"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="leading" secondItem="UwD-q2-j25" secondAttribute="leading" id="dbh-AM-cYn"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="top" secondItem="UwD-q2-j25" secondAttribute="top" id="gkz-GO-8uF"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="top" secondItem="UwD-q2-j25" secondAttribute="top" id="kRx-2V-o2w"/>
+                                    <constraint firstAttribute="bottom" secondItem="p2d-2R-Lru" secondAttribute="bottom" id="l0a-As-l7W"/>
+                                    <constraint firstAttribute="trailing" secondItem="p2d-2R-Lru" secondAttribute="trailing" id="lFZ-pb-W1N"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="leading" secondItem="UwD-q2-j25" secondAttribute="leading" id="ljh-Pq-VXv"/>
+                                    <constraint firstItem="p2d-2R-Lru" firstAttribute="trailing" secondItem="UwD-q2-j25" secondAttribute="trailingMargin" id="sB1-Qd-Zjw"/>
+                                    <constraint firstAttribute="trailing" secondItem="p2d-2R-Lru" secondAttribute="trailing" id="tyy-ct-qmD"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtg-kq-H9e">
+                                <rect key="frame" x="145" y="279" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhD-7j-ll2">
+                                <rect key="frame" x="102" y="178" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PhD-7j-ll2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="158" id="19N-4Z-HOL"/>
+                            <constraint firstItem="PhD-7j-ll2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="Bo2-CO-by4"/>
+                            <constraint firstItem="Jtg-kq-H9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="129" id="G7c-a5-1gz"/>
+                            <constraint firstItem="UwD-q2-j25" firstAttribute="centerX" secondItem="PhD-7j-ll2" secondAttribute="centerX" id="QxK-Qc-hUw"/>
+                            <constraint firstItem="UwD-q2-j25" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="WS2-0x-FCc"/>
+                            <constraint firstItem="Jtg-kq-H9e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="259" id="e20-dj-7EN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hamburguesa" destination="PhD-7j-ll2" id="WE7-3F-K0w"/>
+                        <outlet property="pais" destination="Jtg-kq-H9e" id="RUA-kM-JYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153.59999999999999" y="274.06"/>
         </scene>
     </scenes>
 </document>
